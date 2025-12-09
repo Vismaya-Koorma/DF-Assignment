@@ -7,6 +7,7 @@ def fifo(blocks,cache_size):
     hits = 0
     miss = 0
     print(''' +++++ fifo Cache simulation+++++''')
+    print("\n")
     for block in blocks:
 
         if block in cache:
@@ -23,6 +24,14 @@ def fifo(blocks,cache_size):
                 increment=(increment +1)% cache_size
 
             print(f"block {block} : MISS Cache : {cache}")
+
+    hit_ratio = hits / len(blocks)
+
+    print("--- FINAL RESULT ---")
+    print("\n")
+    print("Total Hits   :", hits)
+    print("Total Misses :", miss)
+    print(" The Hit Ratio    :", round(hit_ratio, 2))
 
 
 blocks=[3,5,1,2,5,7,0,3]
