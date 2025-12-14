@@ -8,4 +8,4 @@
 | Vismaya         | LRU (Least Recently Used)      |
 | Subin           | Set Associative Mapping        |
 | Vivek           | FIFO (First In First Out)      |
-| Theertha Raju     Direct Associative                      
+| Theertha Raju                          
