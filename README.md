@@ -6,6 +6,6 @@
 |-----------------|--------------------------------|
 | Sneha M S       | LFU (Least Frequently Used)    |
 | Vismaya         | LRU (Least Recently Used)      |
-| Subin           | Direct Mapping                 |
+| Subin           | Set Associative Mapping        |
 | Vivek           | FIFO (First In First Out)      |
-| Theertha Raju   | Set Associative Mapping        |
+| Theertha Raju   |                                |
