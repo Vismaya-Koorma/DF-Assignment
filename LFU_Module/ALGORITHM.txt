@@ -1,0 +1,29 @@
+ALGORITHM:
+
+Step 1: Start
+Step 2: Input the size of the cache 
+Step 3: Input the size of the memory
+Step 4: Input the sequence of memory block references.
+Step 5: Initialize the following:
+	    1.Cache as empty
+	    2.Frequency counter for each block
+	    3.Hit count = 0
+	    4.Miss count = 0
+Step 6: Process each block in the reference sequence:
+             If the referenced block exists in the cache:
+		Increase the hit count
+		Increment the frequency of that block
+	     else
+ 		The miss count
+		If free space is available in the cache:
+			Add the block to the cache
+		If the cache is full:
+			Select the block with the minimum frequency (LFU)
+			Remove that block from the cache
+			Insert the new block
+		Set the frequency of the inserted block
+Step 7: Show the current cache status after every memory reference.
+Step 8: Compute the hit ratio using:
+		Hit Ratio = Number of Hits / Total Number of References
+Step 9: Stop.
+
