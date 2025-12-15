@@ -1,0 +1,25 @@
+Step 1: Start
+Step 2: Input the page reference string.
+Step 3: Input the number of frames.
+Step 4: Initialize
+•	an empty list memory to store pages in frames
+•	a counter page_faults = 0
+Step 5: For each page p in the page reference string, repeat Steps 6–10.
+Step 6 (Page Hit Check):
+If p is already in memory:
+•	Remove p from its current position (because it is now most recently used)
+•	Insert/append p at the end of memory
+Step 7 (Page Fault Case):
+If p is not in memory:
+•	Increase page fault counter → page_faults += 1
+Step 8 (Check for Free Frame):
+If memory has space (i.e., len(memory) < frames):
+•	Add p to memory
+Step 9 (No Free Frame – Replacement):
+If memory is full:
+•	Remove the Least Recently Used page → the first element in memory
+•	Insert the new page at the end of memory
+Step 10: Print the current memory state.
+Step 11: After all pages are processed, print total page faults.
+Step 12: Stop.
+
